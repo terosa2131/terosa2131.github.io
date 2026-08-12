@@ -3,44 +3,75 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#070707">
-<meta name="description" content="DJ FeroMeN resmi müzik sitesi">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="DJ FeroMeN resmi müzik sitesi — yeni şarkılar, remixler, coverlar ve videolar.">
 <title>DJ FeroMeN | Official Music Website</title>
 <style>
-:root{--bg:#050505;--panel:#101010;--red:#f21d1d;--white:#f5f5f5;--muted:#999;--line:#292929}
+:root{--bg:#050505;--panel:#0f0f0f;--panel2:#151515;--red:#ff2020;--red2:#a90000;--text:#f4f4f4;--muted:#929292;--line:#292929}
 *{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(circle at 80% 0,#350000,transparent 32%),var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
-a{color:inherit;text-decoration:none}.wrap{width:92%;max-width:1180px;margin:auto}
-header{position:fixed;z-index:20;top:0;width:100%;background:rgba(4,4,4,.9);backdrop-filter:blur(12px);border-bottom:1px solid #252525}
-.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:25px;font-weight:900;font-style:italic}.logo span,h1 span,h2 span{color:var(--red)}
-nav{display:flex;gap:23px}nav a{font-size:11px;letter-spacing:1px;text-transform:uppercase}nav a:hover{color:var(--red)}
-.menu{display:none;background:#111;color:#fff;border:1px solid #444;padding:9px 12px;border-radius:6px}
-.hero{padding:120px 0 55px}.hero-image{width:100%;border:1px solid #333;border-radius:18px;overflow:hidden;box-shadow:0 0 60px rgba(255,0,0,.12);background:#090909}
-.hero-image img{display:block;width:100%;height:auto}
-.buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;padding:22px 10px;background:#080808}.btn{display:inline-block;border:1px solid var(--red);padding:12px 17px;border-radius:6px;font-size:11px;font-weight:bold;text-transform:uppercase}.btn.red{background:var(--red)}
-section{padding:70px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:24px}.head h2{margin:0;font-size:30px;text-transform:uppercase}
-.panel{background:linear-gradient(145deg,#151515,#0b0b0b);border:1px solid var(--line);border-radius:13px;padding:18px}.spotify{width:100%;height:352px;border:0;border-radius:12px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.yt{aspect-ratio:16/9;display:grid;place-items:center;text-align:center;background:#0c0c0c;border:1px solid #333;border-radius:10px}.yt b{font-size:55px;color:red}
-.muted{color:var(--muted);line-height:1.7}.radio{background:linear-gradient(100deg,#210000,#080808,#210000);border-top:1px solid #411010;border-bottom:1px solid #411010}.radioin{display:flex;justify-content:space-between;align-items:center;gap:20px}.radio h2{margin:0}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:#111;border:1px solid #292929;border-radius:11px;padding:18px}.card h3{margin-top:0}
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center}.aboutart{border-radius:15px;overflow:hidden;border:1px solid #333}.aboutart img{width:100%;display:block}
-.social{display:flex;flex-wrap:wrap;gap:10px}.social a{background:#111;border:1px solid #333;border-radius:7px;padding:13px 16px;font-size:12px}.social a:hover{border-color:var(--red);color:var(--red)}
-footer{border-top:1px solid #222;padding:30px 0;color:#777}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-@media(max-width:800px){nav{display:none;position:absolute;top:70px;left:0;right:0;background:#080808;padding:20px;flex-direction:column}.menu{display:block}.grid,.about{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero{padding-top:95px}}
+body{margin:0;background:radial-gradient(circle at 85% 5%,rgba(180,0,0,.25),transparent 28%),#050505;color:var(--text);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{width:92%;max-width:1180px;margin:auto}
+header{position:fixed;z-index:50;top:0;width:100%;background:rgba(4,4,4,.92);backdrop-filter:blur(12px);border-bottom:1px solid #222}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:900;font-style:italic}.logo span,h2 span{color:var(--red)}
+nav{display:flex;gap:22px}nav a{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#ddd}nav a:hover{color:var(--red)}
+.menu{display:none;background:#111;border:1px solid #444;color:#fff;border-radius:6px;padding:9px 12px}
+.hero{padding:94px 0 30px}
+.hero-art{border:1px solid #3a3a3a;border-radius:18px;overflow:hidden;background:#080808;box-shadow:0 0 70px rgba(255,0,0,.12)}
+.hero-art img{display:block;width:100%;height:auto}
+.social-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;padding:18px 0}
+.btn{border:1px solid var(--red);padding:11px 15px;border-radius:6px;font-size:10px;font-weight:bold;letter-spacing:.7px;text-transform:uppercase}
+.btn.red{background:var(--red);color:#fff}
+section{padding:60px 0}
+.head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:18px}
+.head h2{margin:0;font-size:29px;text-transform:uppercase}
+.muted{color:var(--muted);line-height:1.65}
+.panel{background:linear-gradient(145deg,#151515,#0b0b0b);border:1px solid var(--line);border-radius:14px;padding:16px}
+.spotify{width:100%;height:352px;border:0;border-radius:11px}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.video-card{background:linear-gradient(145deg,#151515,#0b0b0b);border:1px solid #292929;border-radius:13px;overflow:hidden;transition:.2s}
+.video-card:hover{transform:translateY(-3px);border-color:#5a1717;box-shadow:0 12px 35px rgba(0,0,0,.35)}
+.video-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1.65fr 1fr;border-color:#751515;box-shadow:0 0 35px rgba(255,0,0,.08)}
+.thumb{display:block;position:relative;aspect-ratio:16/9;background:#111;overflow:hidden}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .25s}
+.video-card:hover .thumb img{transform:scale(1.035)}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:42px;border-radius:10px;background:rgba(255,20,20,.94);display:flex;align-items:center;justify-content:center;font-size:20px;padding-left:3px;box-shadow:0 5px 25px rgba(0,0,0,.5)}
+.video-card:not(.featured) .play{width:48px;height:35px;font-size:16px}
+.duration{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.82);border:1px solid rgba(255,255,255,.12);padding:6px 8px;border-radius:5px;font-size:9px;font-weight:bold;letter-spacing:.7px;color:#fff}
+.video-info{padding:15px}.video-info h3{margin:0 0 6px;font-size:17px}.video-info p{margin:0 0 13px;color:#888;font-size:12px}
+.watch{display:inline-block;color:#ff3b3b;font-size:10px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}
+.radio{background:linear-gradient(100deg,#250000,#090909,#250000);border-top:1px solid #471010;border-bottom:1px solid #471010}
+.radio-in{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:32px;align-items:center}
+.about-art{border:1px solid #333;border-radius:15px;overflow:hidden}.about-art img{display:block;width:100%}
+.social{display:flex;flex-wrap:wrap;gap:9px}.social a{background:#111;border:1px solid #333;border-radius:7px;padding:12px 15px;font-size:11px}
+footer{border-top:1px solid #222;padding:28px 0;color:#777}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:850px){
+nav{display:none;position:absolute;top:68px;left:0;right:0;background:#080808;padding:18px;flex-direction:column;gap:18px;border-bottom:1px solid #222}
+.menu{display:block}
+.video-grid{grid-template-columns:repeat(2,1fr)}
+.video-card.featured{grid-column:1/-1;grid-template-columns:1fr}
+}
+@media(max-width:560px){
+.video-grid{grid-template-columns:1fr}
+.video-card.featured{grid-column:auto}
+.head h2{font-size:23px}
+.spotify{height:330px}
+}
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
 <a class="logo" href="#anasayfa">DJ <span>FeroMeN</span></a>
-<button class="menu" onclick="nav.style.display=nav.style.display==='flex'?'none':'flex'">MENÜ</button>
-<nav id="nav">
-<a href="#anasayfa">Ana Sayfa</a><a href="#muzikler">Müzikler</a><a href="#videolar">Videolar</a><a href="#hakkimda">DJ FeroMeN</a><a href="#sosyal">Sosyal</a>
-</nav></div></header>
+<button class="menu" onclick="const n=document.getElementById('nav');n.style.display=n.style.display==='flex'?'none':'flex'">MENÜ</button>
+<nav id="nav"><a href="#anasayfa">Ana Sayfa</a><a href="#muzikler">Müzikler</a><a href="#videolar">Videolar</a><a href="#hakkimda">DJ FeroMeN</a><a href="#sosyal">Sosyal</a></nav>
+</div></header>
 
 <main>
 <section id="anasayfa" class="wrap hero">
-<div class="hero-image"><img src="dj-feromen-hero.png" alt="DJ FeroMeN resmi müzik sitesi"></div>
-<div class="buttons">
+<div class="hero-art"><img src="dj-feromen-hero.png" alt="DJ FeroMeN"></div>
+<div class="social-buttons">
 <a class="btn red" href="https://youtube.com/@djferomen" target="_blank">▶ YouTube</a>
 <a class="btn" href="https://open.spotify.com/artist/4y5dKp5IpQmbifDJ4FzEuE" target="_blank">♫ Spotify</a>
 <a class="btn" href="https://www.instagram.com/dj.feromen/" target="_blank">◎ Instagram</a>
@@ -49,34 +80,208 @@ footer{border-top:1px solid #222;padding:30px 0;color:#777}.foot{display:flex;ju
 </section>
 
 <section id="muzikler"><div class="wrap">
-<div class="head"><h2>Spotify <span>Müzikler</span></h2><a class="btn" href="https://open.spotify.com/artist/4y5dKp5IpQmbifDJ4FzEuE" target="_blank">Spotify'da aç</a></div>
-<div class="panel">
-<iframe class="spotify" src="https://open.spotify.com/embed/artist/4y5dKp5IpQmbifDJ4FzEuE?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<p class="muted">Gerçek Spotify sanatçı profilin doğrudan burada gösteriliyor.</p>
-</div></div></section>
+<div class="head"><h2>Spotify <span>Müzikler</span></h2><a class="btn" href="https://open.spotify.com/artist/4y5dKp5IpQmbifDJ4FzEuE" target="_blank">Spotify'da Aç</a></div>
+<div class="panel"><iframe class="spotify" src="https://open.spotify.com/embed/artist/4y5dKp5IpQmbifDJ4FzEuE?utm_source=generator&theme=0" allow="autoplay;clipboard-write;encrypted-media;fullscreen;picture-in-picture" loading="lazy"></iframe></div>
+</div></section>
 
 <section id="videolar"><div class="wrap">
-<div class="head"><h2>YouTube <span>Videolar</span></h2><a class="btn red" href="https://youtube.com/@djferomen" target="_blank">Kanalı aç</a></div>
-<div class="grid">
-<div class="panel"><div class="yt"><div><b>▶</b><h3>DJ FeroMeN YouTube</h3><p class="muted">Orijinal videolarını kendi kanalından izle.</p><a class="btn red" href="https://youtube.com/@djferomen" target="_blank">YouTube'a git</a></div></div></div>
-<div class="panel"><h3>🎬 Gerçek YouTube videoları</h3><p class="muted">Bir sonraki adımda bana YouTube video bağlantılarını gönderdiğinde, seçtiğin gerçek videoları bu bölümün içine doğrudan oynatıcı olarak yerleştireceğiz.</p></div>
-</div></div></section>
+<div class="head"><h2>YouTube <span>Videolar</span></h2><a class="btn red" href="https://youtube.com/@djferomen" target="_blank">Kanalı Aç</a></div>
+<p class="muted">Videoların kendi YouTube küçük resimleri otomatik olarak gösteriliyor. Resme veya oynat düğmesine dokununca YouTube'da açılır.</p>
+<div class="video-grid">
 
-<section class="radio"><div class="wrap radioin">
-<div><h2>DJ FeroMeN <span>RADIO</span></h2><p class="muted">Gerçek yayınlarını Spotify üzerinden dinle.</p></div>
+<article class="video-card featured" data-video="QldRZVoYF2s">
+  <a class="thumb" href="https://www.youtube.com/watch?v=QldRZVoYF2s" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/QldRZVoYF2s/hqdefault.jpg" alt="En Çok Dinlenen" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">EN ÇOK DİNLENEN</span>
+  </a>
+  <div class="video-info">
+    <h3>En Çok Dinlenen</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/QldRZVoYF2s" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="dE3YR5zcKsU">
+  <a class="thumb" href="https://www.youtube.com/watch?v=dE3YR5zcKsU" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/dE3YR5zcKsU/hqdefault.jpg" alt="Son Yayın" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">SON YAYIN</span>
+  </a>
+  <div class="video-info">
+    <h3>Son Yayın</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/dE3YR5zcKsU" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="1wzkvXb0XuE">
+  <a class="thumb" href="https://www.youtube.com/watch?v=1wzkvXb0XuE" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/1wzkvXb0XuE/hqdefault.jpg" alt="DJ FeroMeN Video #3" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">YENİ VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #3</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/1wzkvXb0XuE" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="8bTE7-1D9y0">
+  <a class="thumb" href="https://www.youtube.com/watch?v=8bTE7-1D9y0" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/8bTE7-1D9y0/hqdefault.jpg" alt="DJ FeroMeN Video #4" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #4</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/8bTE7-1D9y0" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="b4NoJxU-HyE">
+  <a class="thumb" href="https://www.youtube.com/watch?v=b4NoJxU-HyE" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/b4NoJxU-HyE/hqdefault.jpg" alt="DJ FeroMeN Video #5" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #5</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/b4NoJxU-HyE" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="IXLqZwGPZNk">
+  <a class="thumb" href="https://www.youtube.com/watch?v=IXLqZwGPZNk" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/IXLqZwGPZNk/hqdefault.jpg" alt="DJ FeroMeN Video #6" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #6</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/IXLqZwGPZNk" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="dgQfI4bqO3I">
+  <a class="thumb" href="https://www.youtube.com/watch?v=dgQfI4bqO3I" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/dgQfI4bqO3I/hqdefault.jpg" alt="DJ FeroMeN Video #7" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #7</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/dgQfI4bqO3I" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="CC0432Le7UY">
+  <a class="thumb" href="https://www.youtube.com/watch?v=CC0432Le7UY" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/CC0432Le7UY/hqdefault.jpg" alt="DJ FeroMeN Video #8" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #8</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/CC0432Le7UY" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="J4JW__0fBaQ">
+  <a class="thumb" href="https://www.youtube.com/watch?v=J4JW__0fBaQ" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/J4JW__0fBaQ/hqdefault.jpg" alt="DJ FeroMeN Video #9" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #9</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/J4JW__0fBaQ" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="obMuGV4D7t0">
+  <a class="thumb" href="https://www.youtube.com/watch?v=obMuGV4D7t0" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/obMuGV4D7t0/hqdefault.jpg" alt="DJ FeroMeN Video #10" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #10</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/obMuGV4D7t0" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="q8EUu5DSvs8">
+  <a class="thumb" href="https://www.youtube.com/watch?v=q8EUu5DSvs8" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/q8EUu5DSvs8/hqdefault.jpg" alt="DJ FeroMeN Video #11" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #11</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/q8EUu5DSvs8" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="_153YO8saCA">
+  <a class="thumb" href="https://www.youtube.com/watch?v=_153YO8saCA" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/_153YO8saCA/hqdefault.jpg" alt="DJ FeroMeN Video #12" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #12</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/_153YO8saCA" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="QN3GWv3BWwU">
+  <a class="thumb" href="https://www.youtube.com/watch?v=QN3GWv3BWwU" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/QN3GWv3BWwU/hqdefault.jpg" alt="DJ FeroMeN Video #13" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #13</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/QN3GWv3BWwU" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+<article class="video-card " data-video="bwAsTqMu-pQ">
+  <a class="thumb" href="https://www.youtube.com/watch?v=bwAsTqMu-pQ" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/bwAsTqMu-pQ/hqdefault.jpg" alt="DJ FeroMeN Video #14" loading="lazy">
+    <span class="play">▶</span>
+    <span class="duration">VİDEO</span>
+  </a>
+  <div class="video-info">
+    <h3>DJ FeroMeN Video #14</h3>
+    <p>DJ FeroMeN</p>
+    <a class="watch" href="https://youtu.be/bwAsTqMu-pQ" target="_blank" rel="noopener">YouTube'da İzle ↗</a>
+  </div>
+</article>
+
+</div>
+</div></section>
+
+<section class="radio"><div class="wrap radio-in">
+<div><h2>DJ FeroMeN <span>RADIO</span></h2><p class="muted">Yeni çalışmalar ve yayınlar için Spotify profilini dinle.</p></div>
 <a class="btn red" href="https://open.spotify.com/artist/4y5dKp5IpQmbifDJ4FzEuE" target="_blank">♫ Dinle</a>
 </div></section>
 
-<section><div class="wrap"><div class="head"><h2>Öne <span>Çıkanlar</span></h2></div>
-<div class="cards">
-<div class="card"><h3>🎵 Sebebi Yar</h3><p class="muted">DJ FeroMeN Cover</p><a class="btn" href="https://youtube.com/@djferomen" target="_blank">YouTube →</a></div>
-<div class="card"><h3>🎵 Shadow 148</h3><p class="muted">DJ FeroMeN</p><a class="btn" href="https://open.spotify.com/artist/4y5dKp5IpQmbifDJ4FzEuE" target="_blank">Spotify →</a></div>
-<div class="card"><h3>🎵 Onyx</h3><p class="muted">DJ FeroMeN</p><a class="btn" href="https://open.spotify.com/artist/4y5dKp5IpQmbifDJ4FzEuE" target="_blank">Spotify →</a></div>
-</div></div></section>
-
 <section id="hakkimda"><div class="wrap about">
-<div class="aboutart"><img src="dj-feromen-hero.png" alt="DJ FeroMeN"></div>
-<div><h2>DJ FeroMeN <span>Official</span></h2><p class="muted">Elektronik müzik, remix, cover, Türkçe pop, arabesk ve Anadolu ezgilerini modern DJ soundlarıyla buluşturan bağımsız müzik projesi.</p></div>
+<div class="about-art"><img src="dj-feromen-hero.png" alt="DJ FeroMeN"></div>
+<div><h2>DJ FeroMeN <span>Official</span></h2><p class="muted">Remix, cover, elektronik müzik ve farklı müzik tarzlarını DJ FeroMeN imzasıyla buluşturan bağımsız müzik projesi.</p></div>
 </div></section>
 
 <section id="sosyal"><div class="wrap">
