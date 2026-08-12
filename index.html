@@ -60,6 +60,71 @@ nav{display:none;position:absolute;top:68px;left:0;right:0;background:#080808;pa
 .spotify{height:330px}
 }
 </style>
+
+<!-- DJ FeroMeN v6 Professional Enhancement -->
+<style id="dj-feromen-v6">
+:root{
+  --df-red:#e50914;
+  --df-red2:#ff3340;
+  --df-black:#050505;
+  --df-card:rgba(18,18,20,.82);
+  --df-line:rgba(255,255,255,.10);
+}
+html{scroll-behavior:smooth}
+body{background:var(--df-black);overflow-x:hidden}
+body::before{
+ content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+ background:
+ radial-gradient(circle at 15% 10%,rgba(229,9,20,.13),transparent 28%),
+ radial-gradient(circle at 85% 55%,rgba(229,9,20,.08),transparent 30%);
+}
+.df-v6-wrap{max-width:1180px;margin:0 auto;padding:26px 18px 120px}
+.df-v6-hero{
+ position:relative;overflow:hidden;border:1px solid var(--df-line);
+ border-radius:28px;padding:52px 34px;margin:18px 0 28px;
+ background:linear-gradient(135deg,rgba(20,20,22,.96),rgba(6,6,7,.90));
+ box-shadow:0 24px 80px rgba(0,0,0,.45);
+}
+.df-v6-hero::after{
+ content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+ right:-150px;top:-180px;background:rgba(229,9,20,.20);filter:blur(20px);
+}
+.df-v6-kicker{color:var(--df-red2);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:12px}
+.df-v6-title{font-size:clamp(42px,8vw,86px);line-height:.92;margin:12px 0;font-weight:950}
+.df-v6-title span{color:var(--df-red)}
+.df-v6-sub{max-width:680px;color:#bbb;font-size:17px;line-height:1.6}
+.df-v6-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.df-v6-btn{
+ display:inline-flex;align-items:center;justify-content:center;gap:8px;
+ padding:13px 19px;border-radius:999px;text-decoration:none;font-weight:800;
+ border:1px solid var(--df-line);color:#fff;background:#151517;transition:.2s;
+}
+.df-v6-btn:hover{transform:translateY(-2px);border-color:var(--df-red);box-shadow:0 10px 30px rgba(229,9,20,.18)}
+.df-v6-btn.primary{background:var(--df-red);border-color:var(--df-red)}
+.df-v6-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0 30px}
+.df-v6-card{
+ border:1px solid var(--df-line);border-radius:20px;padding:22px;
+ background:var(--df-card);backdrop-filter:blur(12px);
+}
+.df-v6-icon{font-size:28px;margin-bottom:12px}
+.df-v6-card h3{margin:0 0 7px;font-size:19px}
+.df-v6-card p{margin:0;color:#999;line-height:1.5}
+.df-v6-section-title{font-size:30px;margin:40px 0 14px}
+.df-v6-socials{display:flex;flex-wrap:wrap;gap:10px}
+.df-v6-socials a{color:#fff;text-decoration:none;border:1px solid var(--df-line);padding:10px 14px;border-radius:12px;background:#111113}
+.df-v6-socials a:hover{border-color:var(--df-red);color:#fff}
+.df-v6-footer{
+ text-align:center;color:#777;padding:35px 15px;border-top:1px solid var(--df-line);margin-top:45px
+}
+.df-v6-pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--df-red);box-shadow:0 0 0 0 rgba(229,9,20,.6);animation:dfpulse 1.8s infinite;margin-right:7px}
+@keyframes dfpulse{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@media(max-width:800px){
+ .df-v6-grid{grid-template-columns:1fr}
+ .df-v6-hero{padding:38px 23px;border-radius:22px}
+ .df-v6-title{font-size:54px}
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap nav">
@@ -338,5 +403,38 @@ nav{display:none;position:absolute;top:68px;left:0;right:0;background:#080808;pa
   close.addEventListener('click',()=>box.classList.remove('open'));
 })();
 </script>
+
+
+<section class="df-v6-wrap" id="df-feromen-v6-home">
+  <div class="df-v6-hero">
+    <div class="df-v6-kicker"><span class="df-v6-pulse"></span>DJ FeroMeN • Official</div>
+    <h1 class="df-v6-title">TURN IT<br><span>UP.</span></h1>
+    <p class="df-v6-sub">DJ FeroMeN'in resmi müzik dünyası. Yeni parçalar, remixler, DJ setleri ve projeler tek yerde.</p>
+    <div class="df-v6-actions">
+      <a class="df-v6-btn primary" href="#df-latest">🎵 Son Parçalar</a>
+      <a class="df-v6-btn" href="#df-social">🌐 Sosyal Medya</a>
+    </div>
+  </div>
+
+  <h2 class="df-v6-section-title" id="df-latest">DJ FeroMeN Dünyası</h2>
+  <div class="df-v6-grid">
+    <div class="df-v6-card"><div class="df-v6-icon">🎧</div><h3>Yeni Müzikler</h3><p>DJ FeroMeN'in yeni single, remix ve cover çalışmalarına hızlıca ulaş.</p></div>
+    <div class="df-v6-card"><div class="df-v6-icon">🔥</div><h3>DJ Mix & Remix</h3><p>Enerjik mixler, bass ağırlıklı remixler ve özel DJ projeleri.</p></div>
+    <div class="df-v6-card"><div class="df-v6-icon">🎮</div><h3>DJ Mix Game</h3><p>DJ deneyimini oyuna taşıyan interaktif mix projesine geçiş yap.</p></div>
+  </div>
+
+  <div class="df-v6-card" id="df-social">
+    <h2 style="margin-top:0">Takip Et</h2>
+    <p style="color:#999;margin-top:-4px">DJ FeroMeN'in yeni çalışmalarını kaçırma.</p>
+    <div class="df-v6-socials">
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener">▶ YouTube</a>
+      <a href="https://open.spotify.com/" target="_blank" rel="noopener">♫ Spotify</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">◎ Instagram</a>
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener">♪ TikTok</a>
+    </div>
+  </div>
+
+  <div class="df-v6-footer">© 2026 DJ FeroMeN — Official Website</div>
+</section>
 
 </body></html>
